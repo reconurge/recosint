@@ -1,10 +1,16 @@
 import argparse
 import json
 import os
-from colorama import Fore
+from colorama import Fore, init
 from packages.tool import Tool
 from utils.show_tools import list_categories, print_tools
 
+ITALIC = '\033[3m'
+# Initialize colorama
+init(autoreset=True)
+
+BOLD = '\033[1m'
+RESET = '\033[0m'
 def load_manifest(manifest_path):
     """
     Load the manifest from a JSON file.
@@ -18,8 +24,19 @@ def run_specific_tool(manifest, folder, tool_name, args):
     """
     if folder in manifest and tool_name in manifest[folder]:
         tool_info = manifest[folder][tool_name]
-        tool = Tool(name=tool_info["name"], path=tool_info["path"], install_commands=tool_info["install"], run_command=tool_info["run"])
+        tool = Tool(name=tool_info["name"],url=tool_info["url"], path=tool_info["path"], install_commands=tool_info["install"], run_command=tool_info["run"], description=tool_info["description"] if "description" in tool_info else None)
         tool.run(args)
+    else:
+        print(f"{Fore.RED}Tool '{tool_name}' not found in folder '{folder}' in the manifest.")
+        
+def man_specific_tool(manifest, folder, tool_name, args):
+    """
+    Man a specific tool given a folder and tool name.
+    """
+    if folder in manifest and tool_name in manifest[folder]:
+        tool_info = manifest[folder][tool_name]
+        tool = Tool(name=tool_info["name"],url=tool_info["url"] if "url" in tool_info else None, path=tool_info["path"], install_commands=tool_info["install"], run_command=tool_info["run"], description=tool_info["description"] if "description" in tool_info else None)
+        tool.infos()
     else:
         print(f"{Fore.RED}Tool '{tool_name}' not found in folder '{folder}' in the manifest.")
 
@@ -40,9 +57,15 @@ def main():
     if args.list_tools:
         print_tools(manifest)
         return
+    
+    
 
     if args.list_categories:
         list_categories(manifest)
+        return
+    
+    if args.command == 'man' and args.category and args.tool_name:
+        man_specific_tool(manifest, args.category, args.tool_name, args.args)
         return
 
     if args.command == 'run' and args.category and args.tool_name:

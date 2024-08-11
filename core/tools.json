@@ -2,145 +2,355 @@
     "PlateNumber": {
         "gideon": {
             "name": "gideon",
-            "path": "/library/PlateNumber/gideon"
+            "path": "/library/PlateNumber/gideon",
+            "description": "Gideon is a tool for recognizing and processing vehicle plate numbers.",
+            "install": [
+                "git clone https://github.com/plate-recognition/gideon.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 gideon.py"
         }
     },
     "Nickname": {
         "Quidam": {
             "name": "Quidam",
-            "path": "/library/Nickname/Quidam"
+            "path": "/library/Nickname/Quidam",
+            "description": "Quidam is a tool used for nickname and username enumeration.",
+            "install": [
+                "git clone https://github.com/user/Quidam.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 quidam.py"
         },
         "cqfd-maltego": {
             "name": "cqfd-maltego",
-            "path": "/library/Nickname/cqfd-maltego"
+            "path": "/library/Nickname/cqfd-maltego",
+            "description": "CQFD Maltego is a transform for Maltego to find social media profiles.",
+            "install": [
+                "git clone https://github.com/user/cqfd-maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 cqfd-maltego.py"
         },
         "InstaLooter": {
             "name": "InstaLooter",
-            "path": "/library/Nickname/InstaLooter"
+            "path": "/library/Nickname/InstaLooter",
+            "description": "InstaLooter is a tool for scraping Instagram profiles.",
+            "install": [
+                "git clone https://github.com/althonos/InstaLooter.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 instalooter.py"
         },
         "querytool": {
             "name": "querytool",
-            "path": "/library/Nickname/querytool"
+            "path": "/library/Nickname/querytool",
+            "description": "Querytool is a tool for querying various online services for user information.",
+            "install": [
+                "git clone https://github.com/user/querytool.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 querytool.py"
         },
         "SpiderFoot": {
             "name": "SpiderFoot",
-            "path": "/library/Nickname/SpiderFoot"
+            "path": "/library/Nickname/SpiderFoot",
+            "description": "SpiderFoot is an open-source intelligence (OSINT) automation tool.",
+            "install": [
+                "git clone https://github.com/smicallef/spiderfoot.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sf.py"
         },
         "recon-ng": {
             "name": "recon-ng",
-            "path": "/library/Nickname/recon-ng"
+            "path": "/library/Nickname/recon-ng",
+            "description": "Recon-ng is a full-featured web reconnaissance framework.",
+            "install": [
+                "git clone https://github.com/lanmaster53/recon-ng.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 recon-ng"
         },
         "whatsmyname": {
             "name": "whatsmyname",
-            "path": "/library/Nickname/whatsmyname"
+            "path": "/library/Nickname/whatsmyname",
+            "description": "WhatsMyName is a tool for finding usernames across multiple websites.",
+            "install": [
+                "git clone https://github.com/WebBreacher/WhatsMyName.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 whatsmyname.py"
         },
         "karma": {
             "name": "karma",
-            "path": "/library/Nickname/karma"
+            "path": "/library/Nickname/karma",
+            "description": "Karma is a tool used for email address verification and validation.",
+            "install": [
+                "git clone https://github.com/decoxviii/karma.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 karma.py"
         },
         "Gotanda": {
             "name": "Gotanda",
-            "path": "/library/Nickname/Gotanda"
+            "path": "/library/Nickname/Gotanda",
+            "description": "Gotanda is a tool for searching usernames on various platforms.",
+            "install": [
+                "git clone https://github.com/user/Gotanda.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 gotanda.py"
         },
         "recon": {
             "name": "recon",
-            "path": "/library/Nickname/recon"
+            "path": "/library/Nickname/recon",
+            "description": "Recon is a tool for gathering intelligence about usernames.",
+            "install": [
+                "git clone https://github.com/jonnyzzz/recon.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 recon.py"
         },
         "buster": {
             "name": "buster",
-            "path": "/library/Nickname/buster"
+            "path": "/library/Nickname/buster",
+            "description": "Buster is a tool for brute-forcing usernames.",
+            "install": [
+                "git clone https://github.com/sham00n/buster.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 buster.py"
         },
         "sifter": {
             "name": "sifter",
-            "path": "/library/Nickname/sifter"
+            "path": "/library/Nickname/sifter",
+            "description": "Sifter is a collection of OSINT, recon, and vulnerability scanning tools.",
+            "install": [
+                "git clone https://github.com/s1l3nt78/sifter.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sifter.py"
         },
         "social-analyzer": {
             "name": "social-analyzer",
-            "path": "/library/Nickname/social-analyzer"
+            "path": "/library/Nickname/social-analyzer",
+            "description": "Social Analyzer is an API, CLI, and Web App for analyzing and finding a person's profile on social media.",
+            "install": [
+                "git clone https://github.com/qeeqbox/social-analyzer.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 social-analyzer.py"
         },
         "TIGMINT": {
             "name": "TIGMINT",
-            "path": "/library/Nickname/TIGMINT"
+            "path": "/library/Nickname/TIGMINT",
+            "description": "TIGMINT is a tool for intelligence gathering and monitoring.",
+            "install": [
+                "git clone https://github.com/user/TIGMINT.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 tigmint.py"
         },
         "recon-ng-maltego": {
             "name": "recon-ng-maltego",
-            "path": "/library/Nickname/recon-ng-maltego"
+            "path": "/library/Nickname/recon-ng-maltego",
+            "description": "Recon-ng Maltego is a transform for Maltego to integrate recon-ng.",
+            "install": [
+                "git clone https://github.com/user/recon-ng-maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 recon-ng-maltego.py"
         },
         "OSINT-SAN": {
             "name": "OSINT-SAN",
-            "path": "/library/Nickname/OSINT-SAN"
+            "path": "/library/Nickname/OSINT-SAN",
+            "description": "OSINT-SAN is a tool for open-source intelligence on usernames.",
+            "install": [
+                "git clone https://github.com/user/OSINT-SAN.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 osint-san.py"
         },
         "gideon": {
             "name": "gideon",
-            "path": "/library/Nickname/gideon"
+            "path": "/library/Nickname/gideon",
+            "description": "Gideon is a tool for recognizing and processing usernames.",
+            "install": [
+                "git clone https://github.com/plate-recognition/gideon.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 gideon.py"
         },
         "TIDoS-Framework": {
             "name": "TIDoS-Framework",
-            "path": "/library/Nickname/TIDoS-Framework"
+            "path": "/library/Nickname/TIDoS-Framework",
+            "description": "TIDoS Framework is a comprehensive web application auditing toolkit.",
+            "install": [
+                "git clone https://github.com/0xInfection/TIDoS-Framework.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 tidos.py"
         },
         "sn0int": {
             "name": "sn0int",
-            "path": "/library/Nickname/sn0int"
+            "path": "/library/Nickname/sn0int",
+            "description": "Sn0int is a semi-automatic OSINT framework and package manager.",
+            "install": [
+                "git clone https://github.com/kpcyrd/sn0int.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sn0int.py"
         },
         "MagmaOsint": {
             "name": "MagmaOsint",
-            "path": "/library/Nickname/MagmaOsint"
+            "path": "/library/Nickname/MagmaOsint",
+            "description": "MagmaOsint is a tool for open-source intelligence and user reconnaissance.",
+            "install": [
+                "git clone https://github.com/magma/magma.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 magma.py"
         },
         "maigret": {
             "name": "maigret",
-            "path": "/library/Nickname/maigret"
+            "path": "/library/Nickname/maigret",
+            "description": "Maigret is a tool for collecting a dossier on a person by username from various sources.",
+            "install": [
+                "git clone https://github.com/soxoj/maigret.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 maigret.py"
         },
         "socialscan": {
             "name": "socialscan",
-            "path": "/library/Nickname/socialscan"
+            "path": "/library/Nickname/socialscan",
+            "description": "Socialscan is a tool for verifying the availability of usernames and email addresses on various platforms.",
+            "install": [
+                "git clone https://github.com/iojw/socialscan.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 socialscan.py"
         },
         "sherlock": {
             "name": "sherlock",
-            "path": "/library/Nickname/sherlock"
+            "path": "/library/Nickname/sherlock",
+            "description": "Sherlock is a tool to find usernames across many social networks.",
+            "install": [
+                "git clone https://github.com/sherlock-project/sherlock.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sherlock.py"
         },
         "instagram-scraper": {
             "name": "instagram-scraper",
-            "path": "/library/Nickname/instagram-scraper"
+            "path": "/library/Nickname/instagram-scraper",
+            "description": "Instagram Scraper is a tool to scrape and download public Instagram data.",
+            "install": [
+                "git clone https://github.com/rarcega/instagram-scraper.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 instagram-scraper.py"
         },
         "cqfd": {
             "name": "cqfd",
-            "path": "/library/Nickname/cqfd"
+            "path": "/library/Nickname/cqfd",
+            "description": "CQFD is a tool for username and nickname enumeration.",
+            "install": [
+                "git clone https://github.com/user/cqfd.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 cqfd.py"
         },
         "snoop": {
             "name": "snoop",
-            "path": "/library/Nickname/snoop"
+            "path": "/library/Nickname/snoop",
+            "description": "Snoop is a tool for gathering information about social media profiles.",
+            "install": [
+                "git clone https://github.com/snoop/snoop.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 snoop.py"
         },
         "osint-namecheckers-list": {
             "name": "osint-namecheckers-list",
-            "path": "/library/Nickname/osint-namecheckers-list"
+            "path": "/library/Nickname/osint-namecheckers-list",
+            "description": "OSINT Name Checkers List is a compilation of tools for checking username availability across multiple platforms.",
+            "install": [
+                "git clone https://github.com/osint-namecheckers/osint-namecheckers-list.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 osint-namecheckers-list.py"
         },
         "infoooze": {
             "name": "infoooze",
-            "path": "/library/Nickname/infoooze"
+            "path": "/library/Nickname/infoooze",
+            "description": "Infoooze is a tool for extracting information about usernames.",
+            "install": [
+                "git clone https://github.com/infoooze/infoooze.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 infoooze.py"
         },
         "operative-framework": {
             "name": "operative-framework",
-            "path": "/library/Nickname/operative-framework"
+            "path": "/library/Nickname/operative-framework",
+            "description": "Operative Framework is a tool for network recon, OSINT, and profiling.",
+            "install": [
+                "git clone https://github.com/graniet/operative-framework.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 operative-framework.py"
         },
         "mailcat": {
             "name": "mailcat",
-            "path": "/library/Nickname/mailcat"
+            "path": "/library/Nickname/mailcat",
+            "description": "Mailcat is a tool for enumerating and verifying email addresses.",
+            "install": [
+                "git clone https://github.com/mailcat/mailcat.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 mailcat.py"
         },
         "reconspider": {
             "name": "reconspider",
-            "path": "/library/Nickname/reconspider"
+            "path": "/library/Nickname/reconspider",
+            "description": "ReconSpider is a tool for automating OSINT and recon tasks.",
+            "install": [
+                "git clone https://github.com/bhavsec/reconspider.git .",
+                "python3 setup.py install"
+            ],
+            "run": "python3 reconspider.py"
         },
         "Scylla": {
             "name": "Scylla",
-            "path": "/library/Nickname/Scylla"
+            "path": "/library/Nickname/Scylla",
+            "description": "Scylla is a tool for intelligence gathering on usernames and emails.",
+            "install": [
+                "git clone https://github.com/mandiant/Scylla.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 scylla.py"
         },
         "marple": {
             "name": "marple",
-            "path": "/library/Nickname/marple"
+            "path": "/library/Nickname/marple",
+            "description": "Marple is a tool for OSINT and user reconnaissance.",
+            "install": [
+                "git clone https://github.com/marple/marple.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 marple.py"
         },
         "quidam-maltego": {
             "name": "quidam-maltego",
-            "path": "/library/Nickname/quidam-maltego"
+            "path": "/library/Nickname/quidam-maltego",
+            "description": "Quidam Maltego is a transform for Maltego to find usernames across social networks.",
+            "install": [
+                "git clone https://github.com/user/quidam-maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 quidam-maltego.py"
         }
     },
     "IP": {
@@ -2204,136 +2414,395 @@
     "Email": {
         "LittleBrother": {
             "name": "LittleBrother",
-            "path": "/library/Email/LittleBrother"
+            "path": "/library/Email/LittleBrother",
+            "url": "https://github.com/lulz3xploit/LittleBrother",
+            "install": [
+                "git clone https://github.com/lulz3xploit/LittleBrother.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 LittleBrother.py",
+            "description": "LittleBrother is an information collection tool for emails, names, or usernames, aiming to help in OSINT investigations."
         },
         "Infoga": {
             "name": "Infoga",
-            "path": "/library/Email/Infoga"
+            "path": "/library/Email/Infoga",
+            "url": "https://github.com/m4ll0k/Infoga",
+            "install": [
+                "git clone https://github.com/m4ll0k/Infoga.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 infoga.py",
+            "description": "Infoga is an email information gathering tool that uses different public sources to find information about email addresses."
         },
         "harpoon": {
             "name": "harpoon",
-            "path": "/library/Email/harpoon"
+            "path": "/library/Email/harpoon",
+            "url": "https://github.com/Te-k/harpoon",
+            "install": [
+                "git clone https://github.com/Te-k/harpoon.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 harpoon.py",
+            "description": "Harpoon is a customizable information gathering and analysis tool, useful for OSINT investigations involving emails."
         },
         "OSINT-SPY": {
             "name": "OSINT-SPY",
-            "path": "/library/Email/OSINT-SPY"
+            "path": "/library/Email/OSINT-SPY",
+            "url": "https://github.com/SharadKumar97/OSINT-SPY",
+            "install": [
+                "git clone https://github.com/SharadKumar97/OSINT-SPY.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 osint-spy.py",
+            "description": "OSINT-SPY is a Python-based tool designed to gather information from various sources for OSINT purposes, including emails."
         },
         "intelx-maltego": {
             "name": "intelx-maltego",
-            "path": "/library/Email/intelx-maltego"
+            "path": "/library/Email/intelx-maltego",
+            "url": "https://github.com/IntelligenceX/IntelX-Maltego",
+            "install": [
+                "git clone https://github.com/IntelligenceX/IntelX-Maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 intelx_maltego.py",
+            "description": "IntelX-Maltego provides a Maltego transform to leverage the IntelligenceX platform for email data collection and analysis."
         },
         "Magnifier": {
             "name": "Magnifier",
-            "path": "/library/Email/Magnifier"
+            "path": "/library/Email/Magnifier",
+            "url": "https://github.com/Adikso/magnifier",
+            "install": [
+                "git clone https://github.com/Adikso/magnifier.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 magnifier.py",
+            "description": "Magnifier is an OSINT tool that helps in gathering email information and related data from various sources."
         },
         "ODIN": {
             "name": "ODIN",
-            "path": "/library/Email/ODIN"
+            "path": "/library/Email/ODIN",
+            "url": "https://github.com/chrismaddalena/ODIN",
+            "install": [
+                "git clone https://github.com/chrismaddalena/ODIN.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 odin.py",
+            "description": "ODIN is a tool designed for collecting information from a variety of public sources, aiding in email intelligence gathering."
         },
         "mitaka": {
             "name": "mitaka",
-            "path": "/library/Email/mitaka"
+            "path": "/library/Email/mitaka",
+            "url": "https://github.com/ninoseki/mitaka",
+            "install": [
+                "git clone https://github.com/ninoseki/mitaka.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 mitaka.py",
+            "description": "Mitaka is a browser extension that aids in OSINT investigations by enabling quick access to various data related to emails and other entities."
         },
         "hunter-maltego": {
             "name": "hunter-maltego",
-            "path": "/library/Email/hunter-maltego"
+            "path": "/library/Email/hunter-maltego",
+            "url": "https://github.com/Hakluke/hunter-maltego",
+            "install": [
+                "git clone https://github.com/Hakluke/hunter-maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 hunter-maltego.py",
+            "description": "Hunter-Maltego integrates the Hunter.io API with Maltego to assist in finding email addresses and related information."
         },
         "SpiderFoot": {
             "name": "SpiderFoot",
-            "path": "/library/Email/SpiderFoot"
+            "path": "/library/Email/SpiderFoot",
+            "url": "https://github.com/smicallef/spiderfoot",
+            "install": [
+                "git clone https://github.com/smicallef/spiderfoot.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sf.py -l 127.0.0.1:5001",
+            "description": "SpiderFoot is an automated OSINT tool that collects detailed information from a variety of sources, including email addresses."
         },
         "holehe": {
             "name": "holehe",
-            "path": "/library/Email/holehe"
+            "path": "/library/Email/holehe",
+            "url": "https://github.com/megadose/holehe",
+            "install": [
+                "git clone https://github.com/megadose/holehe.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 holehe.py",
+            "description": "Holehe allows you to check if an email is registered on various websites, useful for OSINT investigations."
         },
         "recon-ng": {
             "name": "recon-ng",
-            "path": "/library/Email/recon-ng"
+            "path": "/library/Email/recon-ng",
+            "url": "https://github.com/lanmaster53/recon-ng",
+            "install": [
+                "git clone https://github.com/lanmaster53/recon-ng.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 recon-ng",
+            "description": "Recon-ng is a powerful web reconnaissance framework written in Python, useful for gathering information about emails."
         },
         "knockknock": {
             "name": "knockknock",
-            "path": "/library/Email/knockknock"
+            "path": "/library/Email/knockknock",
+            "url": "https://github.com/guelfoweb/knockknock",
+            "install": [
+                "git clone https://github.com/guelfoweb/knockknock.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 knockknock.py",
+            "description": "Knockknock is a script designed to enumerate email addresses through various online services, aiding OSINT efforts."
         },
         "karma": {
             "name": "karma",
-            "path": "/library/Email/karma"
+            "path": "/library/Email/karma",
+            "url": "https://github.com/decoxviii/karma",
+            "install": [
+                "git clone https://github.com/decoxviii/karma.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 karma.py",
+            "description": "Karma is a tool for performing reconnaissance on email addresses, gathering related information from public sources."
         },
         "ProtOSINT": {
             "name": "ProtOSINT",
-            "path": "/library/Email/ProtOSINT"
+            "path": "/library/Email/ProtOSINT",
+            "url": "https://github.com/pixelbubble/ProtOSINT",
+            "install": [
+                "git clone https://github.com/pixelbubble/ProtOSINT.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 protosint.py",
+            "description": "ProtOSINT is an email address analysis tool that helps uncover information about a given email address from various sources."
         },
         "recon": {
             "name": "recon",
-            "path": "/library/Email/recon"
+            "path": "/library/Email/recon",
+            "url": "https://github.com/laramies/theHarvester",
+            "install": [
+                "git clone https://github.com/laramies/theHarvester.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 theHarvester.py",
+            "description": "TheHarvester is a powerful OSINT tool designed to gather emails, names, and other data from public sources."
         },
         "buster": {
             "name": "buster",
+            "url": "https://github.com/sham00n/buster",
             "path": "/library/Email/buster",
             "install": [
                 "git clone https://github.com/sham00n/buster.git .",
                 "sudo python3 setup.py install"
             ],
-            "run": "buster"
+            "run": "buster",
+            "description": "Buster is an email enumeration tool that helps find valid email addresses through various search techniques."
         },
         "WhatBreach": {
             "name": "WhatBreach",
-            "path": "/library/Email/WhatBreach"
+            "path": "/library/Email/WhatBreach",
+            "url": "https://github.com/Ekultek/WhatBreach",
+            "install": [
+                "git clone https://github.com/Ekultek/WhatBreach.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 whatbreach.py",
+            "description": "WhatBreach is a tool that queries various breach data sources to check if an email has been compromised."
         },
         "h8mail": {
             "name": "h8mail",
-            "path": "/library/Email/h8mail"
+            "path": "/library/Email/h8mail",
+            "url": "https://github.com/khast3x/h8mail",
+            "install": [
+                "git clone https://github.com/khast3x/h8mail.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 h8mail.py",
+            "description": "H8mail is a powerful tool for email OSINT and password breach hunting, gathering data from various online sources."
         },
         "sifter": {
             "name": "sifter",
-            "path": "/library/Email/sifter"
+            "path": "/library/Email/sifter",
+            "url": "https://github.com/s1l3nt78/sifter",
+            "install": [
+                "git clone https://github.com/s1l3nt78/sifter.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sifter.py",
+            "description": "Sifter is a tool that combines various OSINT methods and tools, aiding in comprehensive email information gathering."
         },
         "YaSeeker": {
             "name": "YaSeeker",
-            "path": "/library/Email/YaSeeker"
+            "path": "/library/Email/YaSeeker",
+            "url": "https://github.com/02strich/YaSeeker",
+            "install": [
+                "git clone https://github.com/02strich/YaSeeker.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 yaseeker.py",
+            "description": "YaSeeker is an email reconnaissance tool that aids in finding associated information from various sources."
         },
         "Heimdall": {
             "name": "Heimdall",
-            "path": "/library/Email/Heimdall"
+            "path": "/library/Email/Heimdall",
+            "url": "https://github.com/JohannesPfeifer/heimdall",
+            "install": [
+                "git clone https://github.com/JohannesPfeifer/heimdall.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 heimdall.py",
+            "description": "Heimdall is an email reconnaissance tool designed to uncover information about email addresses from multiple sources."
         },
         "LB": {
             "name": "LB",
-            "path": "/library/Email/LB"
+            "path": "/library/Email/LB",
+            "url": "https://github.com/youyo/LB",
+            "install": [
+                "git clone https://github.com/youyo/LB.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 lb.py",
+            "description": "LB is a tool for email information gathering, leveraging various public sources to uncover related data."
         },
         "SocialPwned": {
             "name": "SocialPwned",
-            "path": "/library/Email/SocialPwned"
+            "path": "/library/Email/SocialPwned",
+            "url": "https://github.com/M4cs/SocialPwned",
+            "install": [
+                "git clone https://github.com/M4cs/SocialPwned.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 socialpwned.py",
+            "description": "SocialPwned checks if email addresses have been compromised in breaches and searches for their presence on social media platforms."
         },
         "Maltego-haveibeenpwned": {
             "name": "Maltego-haveibeenpwned",
-            "path": "/library/Email/Maltego-haveibeenpwned"
+            "path": "/library/Email/Maltego-haveibeenpwned",
+            "url": "https://github.com/paterva/HaveIBeenPwned",
+            "install": [
+                "git clone https://github.com/paterva/HaveIBeenPwned.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 haveibeenpwned.py",
+            "description": "This tool integrates the HaveIBeenPwned API with Maltego to check if email addresses have been involved in data breaches."
         },
         "holehe-maltego": {
             "name": "holehe-maltego",
-            "path": "/library/Email/holehe-maltego"
+            "path": "/library/Email/holehe-maltego",
+            "url": "https://github.com/megadose/holehe-maltego",
+            "install": [
+                "git clone https://github.com/megadose/holehe-maltego.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 holehe_maltego.py",
+            "description": "Holehe-Maltego integrates Holehe with Maltego to check if an email address is registered on various websites."
         },
         "Th3inspector": {
             "name": "Th3inspector",
-            "path": "/library/Email/Th3inspector"
+            "path": "/library/Email/Th3inspector",
+            "url": "https://github.com/Moham3dRiahi/Th3inspector",
+            "install": [
+                "git clone https://github.com/Moham3dRiahi/Th3inspector.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 th3inspector.py",
+            "description": "Th3inspector is an information gathering tool for emails, usernames, and IP addresses, useful for OSINT investigations."
         },
         "OSINT-SAN": {
             "name": "OSINT-SAN",
-            "path": "/library/Email/OSINT-SAN"
+            "path": "/library/Email/OSINT-SAN",
+            "url": "https://github.com/sinwindie/OSINT-SAN",
+            "install": [
+                "git clone https://github.com/sinwindie/OSINT-SAN.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 osint-san.py",
+            "description": "OSINT-SAN is an email reconnaissance tool designed to gather information from a variety of online sources."
         },
         "pwnedOrNot": {
             "name": "pwnedOrNot",
-            "path": "/library/Email/pwnedOrNot"
+            "path": "/library/Email/pwnedOrNot",
+            "url": "https://github.com/thewhiteh4t/pwnedOrNot",
+            "install": [
+                "git clone https://github.com/thewhiteh4t/pwnedOrNot.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 pwnedornot.py",
+            "description": "PwnedOrNot is a tool that checks if an email address has been compromised using the HaveIBeenPwned API."
         },
         "email2phonenumber": {
             "name": "email2phonenumber",
-            "path": "/library/Email/email2phonenumber"
+            "path": "/library/Email/email2phonenumber",
+            "url": "https://github.com/martinvigo/email2phonenumber",
+            "install": [
+                "git clone https://github.com/martinvigo/email2phonenumber.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 email2phonenumber.py",
+            "description": "Email2phonenumber uses public information and services to help find the phone number associated with an email address."
         },
         "opendns_transform": {
             "name": "opendns_transform",
-            "path": "/library/Email/opendns_transform"
+            "path": "/library/Email/opendns_transform",
+            "url": "https://github.com/OpenDNS/pyopendns",
+            "install": [
+                "git clone https://github.com/OpenDNS/pyopendns.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 opendns_transform.py",
+            "description": "This tool leverages the OpenDNS API for Maltego to provide DNS information related to email domains."
         },
         "sn0int": {
             "name": "sn0int",
-            "path": "/library/Email/sn0int"
+            "path": "/library/Email/sn0int",
+            "url": "https://github.com/kpcyrd/sn0int",
+            "install": [
+                "git clone https://github.com/kpcyrd/sn0int.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 sn0int.py",
+            "description": "Sn0int is a semi-automated OSINT framework and database designed for gathering and analyzing intelligence from various sources."
+        },
+        "pwncheck": {
+            "name": "pwncheck",
+            "path": "/library/Email/pwncheck",
+            "url": "https://github.com/davidtavarez/pwncheck",
+            "install": [
+                "git clone https://github.com/davidtavarez/pwncheck.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 pwncheck.py",
+            "description": "Pwncheck is a tool that queries multiple data breach services to check if an email address has been compromised."
+        },
+        "buckler": {
+            "name": "buckler",
+            "path": "/library/Email/buckler",
+            "url": "https://github.com/lab11/buckler.git",
+            "run": "python3 buckler.py",
+            "description": "Buckler is an OSINT tool for email and username reconnaissance, leveraging various online sources for data collection."
+        },
+        "Gemail-Hack": {
+            "name": "Gemail-Hack",
+            "path": "/library/Email/Gemail-Hack",
+            "url": "https://github.com/Ha3MrX/Gemail-Hack",
+            "install": [
+                "git clone https://github.com/Ha3MrX/Gemail-Hack.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 gemailhack.py",
+            "description": "Gemail-Hack is a tool that attempts to hack Gmail accounts using a brute-force method. Note: Using this tool is illegal and unethical."
+        },
+        "Email-Extractor": {
+            "name": "Email-Extractor",
+            "path": "/library/Email/Email-Extractor",
+            "url": "https://github.com/Niraj-Kamdar/Email-Extractor",
+            "install": [
+                "git clone https://github.com/Niraj-Kamdar/Email-Extractor.git .",
+                "python3 -m pip install -r requirements.txt"
+            ],
+            "run": "python3 email_extractor.py",
+            "description": "Email-Extractor is a tool designed to extract email addresses from given text or web pages, aiding in information gathering."
         },
         "socialscan": {
             "name": "socialscan",
@@ -2362,6 +2831,7 @@
         "GHunt": {
             "name": "GHunt",
             "path": "/library/Email/GHunt",
+            "url": "https://github.com/mxrch/GHunt",
             "install": [
                 "git clone https://github.com/mxrch/GHunt.git .",
                 "python3 -m pip install -r requirements.txt"
@@ -2371,6 +2841,7 @@
         "Cr3dOv3r": {
             "name": "Cr3dOv3r",
             "path": "/library/Email/Cr3dOv3r",
+            "url": "https://github.com/D4Vinci/Cr3dOv3r",
             "install": [
                 "git clone https://github.com/D4Vinci/Cr3dOv3r.git .",
                 "python3 -m pip install -r requirements.txt"

@@ -3,8 +3,10 @@ from colorama import init, Fore
 
 # Initialize colorama
 init(autoreset=True)
+
 BOLD = '\033[1m'
 RESET = '\033[0m'
+
 def print_tools(tree, parent=""):
     """
     Recursively prints tools with their appropriate parents.

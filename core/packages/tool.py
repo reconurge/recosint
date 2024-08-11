@@ -1,16 +1,24 @@
 import os
 import subprocess
 import sys
-
-from colorama import Fore
 from pathlib import Path
+from colorama import init, Fore
+
+# Initialize colorama
+init(autoreset=True)
+
+BOLD = '\033[1m'
+RESET = '\033[0m'
+ITALIC = '\033[3m'
 
 class Tool:
-    def __init__(self, name, path, install_commands, run_command):
+    def __init__(self, name,url,  path, install_commands, run_command, description):
         self.name = name
+        self.url=url
         self.path = str(Path(__file__).parent.parent) + path
         self.install_commands = install_commands
-        self.run_command =run_command
+        self.run_command = run_command
+        self.description = description
 
     def install_tool(self):
         """
@@ -64,3 +72,20 @@ class Tool:
         except subprocess.CalledProcessError as e:
             print(f"Failed to execute: {run_command}. Error: {e}")
             sys.exit(1)
+
+    def infos(self):
+        """
+        Prints infos about a particular tool.
+        """
+        print(f"\n{BOLD}{Fore.CYAN}{self.name}")
+        print(f"{Fore.CYAN}{self.url}")
+        if self.description:
+            print(f"\n{Fore.YELLOW}{self.description}")
+        else:
+            print(f"\n{Fore.YELLOW}{ITALIC}No description provided.") 
+            
+        print(f"\nInstall commands:")
+        print("\n".join(f"{Fore.LIGHTCYAN_EX} -  {command}" for command in list(self.install_commands)))
+        
+        print(f"\n{Fore.LIGHTYELLOW_EX}Tool located in {ITALIC}{self.path}.\n") 
+
