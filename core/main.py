@@ -42,7 +42,7 @@ def man_specific_tool(manifest, folder, tool_name, args):
 
 def main():
     parser = argparse.ArgumentParser(description="Manage tools in the manifest.")
-    parser.add_argument('-list_tools', action='store_true', help="List all tools")
+    parser.add_argument('-list_tools', nargs='?', const='All tools', help='List tools optionally with a specific source')
     parser.add_argument('-list_categories', action='store_true', help="List all categories")
     parser.add_argument('command', nargs='?', help="Command to run")
     parser.add_argument('category', nargs='?', help="Category of the tool")
@@ -55,7 +55,13 @@ def main():
     manifest = load_manifest(manifest_path)
 
     if args.list_tools:
-        print_tools(manifest)
+        if args.list_tools == 'All tools':
+            print_tools(manifest)
+        else:
+            if args.list_tools not in manifest:
+                print(f"{BOLD}{Fore.RED}Category '{args.list_tools}' doesn't exist.")
+                return
+            print_tools(manifest, parent = args.list_tools)
         return
     
     

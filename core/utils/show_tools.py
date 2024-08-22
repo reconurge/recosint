@@ -11,19 +11,22 @@ def print_tools(tree, parent=""):
     """
     Recursively prints tools with their appropriate parents.
     """
-    for key, value in tree.items():
+    # Only proceed if parent is not empty, else use the entire tree
+    subtree = tree.get(parent, tree) if parent else tree
+    
+    for key, value in subtree.items():
         if isinstance(value, dict):
             # Check if it is a tool with 'install' or 'run' key
             if 'install' in value or 'run' in value:
                 # Tool is active
-                if parent != "":
+                if parent:
                     print(f"{BOLD}{Fore.GREEN}{parent + '/' if parent else ''}{key}{RESET}")   
             else:
                 # Tool is disabled
-                if parent != "":
+                if parent:
                     print(f"{Fore.LIGHTBLACK_EX}{parent + '/' if parent else ''}{key}")
             # Recursively print sub-tools or categories
-            print_tools(value, parent + '/' + key if parent else key)
+            print_tools(value, parent=parent + '/' + key if parent else key)
         else:
             # If it's not a dict, ignore (shouldn't happen in a correct manifest)
             continue
